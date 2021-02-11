@@ -1,0 +1,164 @@
+
+
+/* if the viewport is equal to 340px or less */
+@media only screen and (max-width: 340px){
+    .header_area .main-menu .navbar .navbar-brand img{
+        width: 170px;
+    }
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .contact-area .contact .contact-title,
+    .site-main .services-area{
+        padding: 2%;
+        margin: 0%;
+    }
+    .site-main nav{
+        min-height: 12px;
+        }
+    .site-main .site-banner{
+        padding-left: 2rem ;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size:38px;
+    }
+    .site-main .site-banner .site-title h4{
+        font-size: 1.2rem;
+    }
+    .site-main .site-banner .banner-image {
+        margin-top: 0;
+    }
+    .site-main .site-banner .banner-image > img {
+        width: auto;
+        height: auto;
+    }
+    .site-main .site-banner .site-buttons a > img.banner-icons{
+        padding: 0.3rem;
+    } 
+    .site-main .about-area .about-image {
+        display: none;
+    }
+    .site-main .services-area{
+        margin-top: 2rem;
+    }
+    .site-main > .services-area .services{
+        width: 13rem;
+    }
+    .site-main .techskills-area{
+        background: none;
+     }
+    .site-main .projects-area .project-title h1,
+    .site-main .services-area .services-title h1,
+    .site-main .techskills-area .techskills-title h2 > span{
+        font-size: 25px;
+    }
+    .site-main .projects-area .button-group button{
+        font: normal 500 10px/20px var(--roboto);
+        padding: 2rem 0;
+    }
+    .site-main .projects-area .button-group button + button{
+        padding-left: 1rem;
+      }
+    .site-main .contact-area .contact{
+        margin-left: 6%;
+        padding:  2rem 0 2rem 0;
+    }
+    .site-main .contact-area .contact .contact-title{
+        font-size: 15px;
+        display: block;
+    }
+}
+/* if the viewport is equal to 792px or less */
+@media only screen and (max-width: 792px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand{
+        padding: 2%;
+        margin: 0%;
+    }
+    .site-main .about-area .about-title h2 > span,
+    .site-main .services-area .services-title h1,
+    .site-main .techskills-area .techskills-title h2 > span,
+    .site-main .projects-area .project-title h1,
+    .site-main .contact-area h4
+    {
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    .site-main .site-banner{
+        padding-left: 1rem ;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+    .site-main .site-banner .site-title h3{
+        margin-top: 1rem;
+        padding-top: 10%;
+    }
+    .site-main .site-banner .banner-image {
+        margin: 0;
+    }
+    .site-main .site-banner .banner-image > img {
+        width: 40rem;
+        height: auto;
+    }
+
+    .site-main .site-banner .site-buttons a > img.banner-icons{
+        margin: 0.1rem;
+    } 
+    .site-main .techskills-area{
+        padding: 1%;
+        background: none;
+    }
+    .site-main .about-area {
+        padding: 1rem;
+        margin: 0 2rem;
+    }
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+    .site-main .about-area .about-image {
+        display: none;
+    }
+    .site-main > .services-area .services{
+        margin: 1rem .5rem;
+    }
+    .site-main .projects-area{
+        padding:5rem 0;
+    }
+    .site-main .projects-area .button-group{
+        margin: 1em 0;
+    }
+    .site-main .projects-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+    .site-main .contact-area .contact .contact-title{
+        font-size: 17px;
+    }
+    .site-main .contact-area .contact .social a > i{
+        padding: 2rem 1rem;
+    }
+}
+/* if the viewport is equal to 1910px or less */
+@media only screen and (max-width: 1910px){
+    .header_area .main-menu .navbar{
+        padding: 0.2rem
+    }
+    .container{
+        max-width: 90%;
+    }
+    .site-main .techskills-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+}
+
+/* if the viewport is equal to 2560px or less */
+@media only screen and (min-width: 2560px){
+ html,body{
+     background :none;
+ }
+ .site-main .site-banner .banner-image > img {
+    width: 55rem;
+    height: 42rem;
+}
+}
