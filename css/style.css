@@ -1,0 +1,405 @@
+
+/* get font from fonts folder*/
+@font-face{
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: url(../img/backgrounds/header-image.png) no-repeat;
+}
+/* initialize CSS variables */
+:root {
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color:#201f1f17;
+    --gradient-color:linear-gradient(90deg, #4458dc 0%, #14c791 100%);
+    --shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow:0px 10px 30px rgba(57,56,61,0.205);
+
+    /* font family variable*/
+    --roboto: 'Roboto',cursive;
+}
+
+/* global CSS variables*/
+
+.title-text{
+    font: normal bold 50px/72px var(--roboto);
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.button{
+    padding: 0.6rem 2rem;
+    font: normal 500 16px/20px var(--roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+.button.primary-button {
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background-color .6s ease;
+    box-shadow: var(--box-shadow);
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.button.primary-button::after{
+    position: absolute;
+    top:-2px; left:-2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    border-radius: 4px;
+    z-index: -1;
+}
+.button > a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.button:hover > a{
+    text-decoration: none;
+    color: black;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+ /* banner icons*/
+img.banner-icons{
+    border-radius: 30px;
+    margin:5px;
+}
+img.banner-icons:hover{
+    border-radius: 30px;
+    background :  #141313;
+    border: 2px solid #141313;
+    transition: transform .5s ease;
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--roboto);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.title-h1{
+    font: normal bold 39px/40px var(--roboto);
+    letter-spacing: 20px;
+}
+
+.navbar_fixed{
+    position:fixed;
+    width:100%;
+    top:-1px;
+    left:0;right: 0;
+    background: rgb(129, 233, 222);
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+p.credits{
+    padding: 0.5rem;
+    font-weight: 500;
+}
+
+/* Start Navigation header area*/
+
+.header_area .main-menu .navbar.clickeds {
+    background-color :rgb(129, 233, 222) !important;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    /* 0 2 0 5*/
+    padding: 0 5rem 0 2rem;
+}
+.header_area .main-menu .nav-item .nav-link{
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1.5rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* End of Navigation area*/
+
+/* Start Banner Area */
+.site-main .site-banner{
+    background : none;
+    background-position: 0% 50%;
+    padding-left: 3rem ;
+}
+
+.site-main .site-banner .site-title h3{
+    margin-top: 5rem;
+    padding-top: 30%;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+.site-main .site-banner .banner-image {
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.site-main .site-banner .banner-image > img {
+    width: 70rem;
+    height: 37rem;
+    margin-bottom: -40px;
+    mix-blend-mode: multiply;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+.site-main .site-banner .site-buttons{
+    padding-top: 10%;
+}
+
+/* End Banner Area */
+
+/* Start About me Area */
+.site-main .about-area{
+    padding:5rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 48px/60px var(--roboto);
+    letter-spacing: 20px;
+}
+.site-main .about-area .about-title .paragraph > p{
+    padding : 0.4rem 0;
+}
+.site-main .about-area .about-image > img {
+    height: 30rem;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+/* End About me Area */
+
+/* Start Services Area */
+
+.site-main .services-area{
+    padding: 5rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font: normal bold 48px/60px var(--roboto);
+    letter-spacing: 20px;
+}
+.site-main > .services-area .services{
+    background:  #bfecdf;
+    padding: 1rem 0;
+    width: 16rem;
+    margin: 4rem .5rem;
+    border-radius: 12px;
+    transition: box-shadow .3s ease-in-out;
+}
+.site-main > .services-area .services:hover{
+    box-shadow: 0px 20px 40px rgba(26, 26, 27, 0.205);
+
+}
+.site-main > .services-area .services .services-img{
+    margin-bottom: 0.1rem;
+    color: #4458dc;
+}
+.site-main > .services-area .services .services-img > span{
+    font-size: 4rem;
+}
+
+/* End Services Area */
+
+/* Start Skills Area*/
+.site-main .techskills-area{
+    padding: 3rem;
+    margin-bottom: 4rem;
+    background:url(../img/backgrounds/skills-bg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.site-main .techskills-area .techskills-title h2 > span{
+    display: block;
+    font: normal bold 48px/60px var(--roboto);
+    letter-spacing: 20px;
+}
+.site-main .techskills-area .first-row .col-lg-3{
+    display: flex;
+    justify-content: center;
+}
+.site-main .techskills-area .first-row .col-lg-3 > .single-techskills{
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.site-main .techskills-area .first-row .col-lg-3 > .single-techskills > span{
+    font-size: 6rem;
+    display: block;
+    transition: transform .3s ease-in-out;
+}
+.site-main .techskills-area .first-row .col-lg-3 > .single-techskills > span:hover{
+   filter: brightness(0.15);  
+   transform:  scale(1.25);
+}
+
+/* End Skils Area*/
+
+
+/* Start Portfolio Area*/
+.site-main .projects-area{
+    padding:7rem 0;
+}
+
+.site-main .projects-area .button-group button{
+  background:  transparent;
+  border:none;
+  font: normal 500 16px/130px var(--roboto);
+  text-transform: uppercase;
+}
+
+.site-main .projects-area .button-group button + button{
+  padding-left: 3rem;
+}
+
+.site-main .projects-area .grid .our-project > title h4{
+  font: normal 700 25px/12px var(--roboto);
+}
+.site-main .projects-area .grid .our-project .img{
+    height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+
+  }
+
+  .site-main .projects-area .grid .our-project .img img{
+    transition: transform .5s ease;
+  }
+
+.site-main .projects-area .grid .our-project .img:hover img{
+    transform: scale(1.5);
+}
+/* End Portfolio Area*/
+
+/* Qualifications Area*/
+
+.site-main .qual-area .qual-title p{
+    padding: 1rem 7rem;
+}
+
+.site-main .qual-area .qual{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin:1rem 0rem;
+}
+
+.site-main .qual-area .qual .qual-img{
+    padding: 1rem;
+}
+
+.site-main .qual-area .qual .about-qual{
+    padding-top :2rem;
+}
+
+.site-main .qual-area .about-qual h4 {
+  font : normal 500 21px/20px var(--roboto)
+}
+
+.site-main .qual-area .about-qual p{
+    font-size:14px
+}
+
+.site-main .qual-area .owl-carousel .owl-item{
+    display:flex;
+    justify-content: center;
+    padding:0 1rem;
+}
+
+.site-main .qual-area .owl-carousel .owl-dots.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+/* End Qualifications Area*/
+
+/* Contact Area */
+.site-main .contact-area .contact{
+    background: linear-gradient(90deg, #4458dc 0%, #14c791 100%);
+    padding: 5rem 0 2rem 0;
+    margin: 5rem auto;
+}
+.site-main .contact-area .contact .contact-title{
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+    letter-spacing: 15px;
+    display: block;
+}
+.site-main .contact-area .contact .contact-list{
+    padding: 2rem 0 0 0;
+}
+.site-main .contact-area .contact .contact-list p{
+    font: normal 200 18px/20px var(--roboto);
+    color: whitesmoke;
+}
+.site-main .contact-area .contact .contact-list p > span{
+ padding-right: 10px;
+}
+.site-main .contact-area .contact .social a > i{
+    font-size: 3rem;
+    color: white;
+    padding: 2.5rem 2rem;
+}
+.site-main .contact-area .contact .social a:hover > i{
+  color: turquoise;
+  transform: scale(1.1);
+}
+/* End Contact Area */
+
+/* Footer */
+footer.footer-area{
+    background: url(../img/backgrounds/footer-im.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* End Footer */
